@@ -1,0 +1,13 @@
+https://goodlucknua.tistory.com/46
+
+https://soyoung-new-challenge.tistory.com/62?category=831257
+
+
+
+docker run -i -t --name myvenv_web
+
+
+docker run -i -t -p 8080:8080 --name="dtest" dtest:latest
+
+docker start dtest;
+docker rm dtest;
