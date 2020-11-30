@@ -13,7 +13,8 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    command: gunicorn myproject.wsgi:application --bind 0.0.0.0:8000
+    # command: gunicorn myproject.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn djangosample.wsgi:application --bind 0.0.0.0:8000 --workers 9 --error-logfile /app/logs/gunicorn/error.log --access-logfile  /app/logs/gunicorn/access.log
     ports:
       - "8000:8000"
     volumes: 
